@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pallando Labs</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #333;
+      background: #f8faf9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: #2A3F9D;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .logo svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2A3F9D;
+      margin-bottom: 12px;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: #555;
+      max-width: 520px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .contact {
+      display: inline-block;
+      background: #2A3F9D;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .contact:hover {
+      background: #3B52C0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #999;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" fill="white" opacity="0.9"/>
+        <path d="M2 17l10 5 10-5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 12l10 5 10-5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>Pallando Labs</h1>
+    <p class="tagline">
+      We build thoughtful software that makes a difference — from healthcare tools to custom applications that solve real problems.
+    </p>
+    <a href="mailto:zane@pallandolabs.com" class="contact">Get in Touch</a>
+  </div>
+  <footer>&copy; 2026 Pallando Labs Ltd. All rights reserved.</footer>
+</body>
+</html>
