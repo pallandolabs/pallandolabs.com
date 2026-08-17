@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Pallando Labs Aperture Logo</title>
+  <desc id="desc">A minimalist four-part geometric aperture in near-black with a deep blue upper-right segment.</desc>
+  <g transform="translate(256 256) scale(1.45) translate(-284 -202)">
+    <path d="M284 67L375 121L328 148L284 122L240 148L193 121L284 67Z" fill="#111318"/>
+    <path d="M390 148V256L343 229V177L299 151V97L390 148Z" fill="#1648D8"/>
+    <path d="M375 283L284 337L284 283L328 257V205L375 178V283Z" fill="#111318"/>
+    <path d="M178 256V148L225 175V227L269 253V307L178 256Z" fill="#111318"/>
+  </g>
+</svg>
