@@ -4,65 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pallando Labs — Production software since 2011</title>
+  <meta name="description" content="Pallando Labs is the consulting practice of Zane McCaig — AI systems, web and mobile products, and the infrastructure behind them. Scoped honestly, shipped to production, maintained after launch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pallandolabs.com">
+  <meta property="og:title" content="Pallando Labs — Production software since 2011">
+  <meta property="og:description" content="AI systems, web and mobile products, and the infrastructure behind them. Scoped honestly, shipped to production, maintained after launch.">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="pallando-labs-aperture-logo.svg">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    :root {
+      --brand: #2A3F9D;
+      --brand-light: #3B52C0;
+      --ink: #333;
+      --ink-soft: #555;
+      --ink-faint: #999;
+      --bg: #F6F2EA;
+      --card: #ffffff;
+      --rule: #e5ddcd;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      color: #333;
-      background: #f8faf9;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
     }
 
     .hero {
-      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 48px 24px;
+      padding: 72px 24px 56px;
       text-align: center;
     }
 
-    .logo {
-      width: 140px;
-      height: 140px;
-      margin-bottom: 32px;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-    }
+    .logo { width: 120px; height: 120px; margin-bottom: 28px; }
+    .logo img { width: 100%; height: 100%; }
 
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: #2A3F9D;
+      color: var(--brand);
       margin-bottom: 8px;
     }
 
     .headline {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 600;
-      color: #333;
+      color: var(--ink);
       margin-bottom: 16px;
     }
 
     .tagline {
       font-size: 1.125rem;
-      color: #555;
-      max-width: 520px;
+      color: var(--ink-soft);
+      max-width: 560px;
       line-height: 1.6;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
 
     .contact {
       display: inline-block;
-      background: #2A3F9D;
+      background: var(--brand);
       color: #fff;
       text-decoration: none;
       padding: 14px 36px;
@@ -71,16 +77,68 @@
       font-weight: 600;
       transition: background 0.2s;
     }
+    .contact:hover { background: var(--brand-light); }
 
-    .contact:hover {
-      background: #3B52C0;
+    section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px;
     }
+
+    section + section { border-top: 1px solid var(--rule); }
+
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    .card p { font-size: 0.95rem; color: var(--ink-soft); }
+
+    .work-item { margin-bottom: 26px; }
+    .work-item:last-child { margin-bottom: 0; }
+    .work-item h3 { font-size: 1.05rem; }
+    .work-item .role { font-size: 0.85rem; color: var(--ink-faint); margin-bottom: 6px; }
+    .work-item p { font-size: 0.97rem; color: var(--ink-soft); }
+    .work-item a { color: var(--brand); text-decoration: none; }
+    .work-item a:hover { text-decoration: underline; }
+
+    .about p { font-size: 1rem; color: var(--ink-soft); }
+    .about p + p { margin-top: 12px; }
+
+    .cta-section { text-align: center; }
+    .cta-section p { color: var(--ink-soft); margin-bottom: 24px; }
 
     footer {
       text-align: center;
-      padding: 24px;
-      color: #999;
+      padding: 32px 24px;
+      color: var(--ink-faint);
       font-size: 0.85rem;
+      border-top: 1px solid var(--rule);
+      margin-top: 40px;
+    }
+    footer a { color: var(--ink-faint); }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 20px 40px; }
+      h1 { font-size: 2rem; }
     }
   </style>
 </head>
@@ -92,10 +150,83 @@
     <h1>Pallando Labs</h1>
     <p class="headline">Production software since 2011</p>
     <p class="tagline">
-      We're a small consultancy that builds real applications — agentic AI platforms, web apps, and the infrastructure behind them. No hype, no bloat. The right tool for your problem, shipped and maintained.
+      AI systems, web and mobile products, and the infrastructure behind them —
+      scoped honestly, shipped to production, and maintained after launch.
     </p>
-    <a href="mailto:sales@pallandolabs.com" class="contact">Get in Touch</a>
+    <a href="mailto:zane@pallandolabs.com" class="contact">Get in Touch</a>
   </div>
-  <footer>&copy; 2026 Pallando Labs Inc. All rights reserved.</footer>
+
+  <section>
+    <h2>What I Do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>End-to-end product builds</h3>
+        <p>Bring an idea; get a launched product. Design, development, app-store
+        operations and compliance, landing page — a fixed quote after scoping,
+        not an open-ended meter.</p>
+      </div>
+      <div class="card">
+        <h3>AI systems &amp; agents</h3>
+        <p>From a product's first AI feature to production agent platforms —
+        MCP servers, chat and realtime voice interfaces, and vector search
+        that holds up at scale.</p>
+      </div>
+      <div class="card">
+        <h3>Infrastructure &amp; ongoing care</h3>
+        <p>Cloud migrations, observability, and monthly retainers that keep
+        shipped products healthy — platform and policy changes handled before
+        they become your problem.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Track Record</h2>
+    <div class="work-item">
+      <h3>Sunsama</h3>
+      <p class="role">Head of AI &amp; Infrastructure · 2020–present</p>
+      <p>At <a href="https://sunsama.com">Sunsama</a> (YC-backed), I pitched and shipped the company's first AI
+      features — automatic task categorization and planned-time prediction —
+      then the systems that followed: AI daily summaries, the public MCP
+      server, Sunny — Sunsama's AI assistant — and realtime voice AI. I also run the
+      platform underneath it all: a resilient Cloud Run deployment and one of
+      the largest vector-search deployments on MongoDB Atlas. Revenue has
+      grown more than 10&times; since I joined.</p>
+    </div>
+    <div class="work-item">
+      <h3>ATB Financial — Leap Innovation Lab</h3>
+      <p class="role">Senior Engineer, data lake lead · 2018–2020</p>
+      <p>Led the architecture and build of the innovation lab's data lake at
+      one of Canada's largest banks — including the tooling for data
+      discovery, analysis, and machine learning on top of it.</p>
+    </div>
+    <div class="work-item">
+      <h3>Instanews</h3>
+      <p class="role">Co-founder &amp; Lead Engineer · 2015–2016</p>
+      <p>Co-founded a hyperlocal news startup and built the entire MVP — iOS, Android,
+      and web — from infrastructure to product, solo.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>Pallando Labs is the consulting practice of Zane McCaig — B.Eng. in
+    Computer Engineering (McGill), fifteen years shipping production software
+    for banks, startups, and founders with an idea and no technical team.</p>
+    <p>Based in Vancouver, Canada. Working remotely, everywhere.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Start a Conversation</h2>
+    <p>The fastest way to scope anything is a short conversation about what
+    you're trying to build.</p>
+    <a href="mailto:zane@pallandolabs.com" class="contact">zane@pallandolabs.com</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Pallando Labs Inc. — Vancouver, BC ·
+    <a href="https://www.linkedin.com/in/zane-mccaig-6926b929/">LinkedIn</a> ·
+    <a href="https://github.com/zanemcca">GitHub</a>
+  </footer>
 </body>
 </html>
